@@ -28,7 +28,8 @@ font-family: 'Work Sans', sans-serif;*/
 }
 
 .banner{
-    position: relative;
+    background-image: url(../img/taylor-swift.jpg);
+    height: 800px;
 }
 
 .banner img {
@@ -37,10 +38,11 @@ font-family: 'Work Sans', sans-serif;*/
 }
 
 .text-banner{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    height: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
