@@ -9,7 +9,6 @@ font-family: 'Work Sans', sans-serif;
 font-family: 'Ms Madi', cursive;*/
 
 .main-header{
-    position: fixed;
     font-family: 'Bebas Neue', cursive;
     background-color: white;
     padding: 15px 61px;
@@ -32,7 +31,7 @@ font-family: 'Ms Madi', cursive;*/
 }
 
 .banner{
-    background-image: url(../img/gif-palco.gif);
+    background-image: url(../img/gif-taylor-show.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -69,7 +68,8 @@ h2{
     font-family: 'Bebas Neue', cursive;
     margin: 37px 80px;
     display: flex;
-    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -79,16 +79,31 @@ h2{
     border-radius: 12px;
     overflow: hidden;
 }
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #F4F4F4;
+    border-radius: 12px;
+    padding: 25px 32px;
+}
+
 footer{
     height: 365px;
 }
+
 .inicial-msg{
+    color: white;
+    font-size: 20px;
     font-family: 'Bebas Neue', cursive;
     padding: 80px;
     background-color: #171717;
 }
 
 .final-msg{
+    color: white;
+    font-size: 17px;
     font-family: 'Bebas Neue', cursive;
     padding: 80px;
     background-color: #171717;
