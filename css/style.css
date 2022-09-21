@@ -9,8 +9,10 @@ font-family: 'Work Sans', sans-serif;
 font-family: 'Ms Madi', cursive;*/
 
 .main-header{
+    position: fixed;
     font-family: 'Bebas Neue', cursive;
     background-color: white;
+    padding: 15px 61px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -30,9 +32,10 @@ font-family: 'Ms Madi', cursive;*/
 }
 
 .banner{
-    background-image: url(../img/taylor-swift.jpg);
+    background-image: url(../img/gif-palco.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
-    width: 100vw;
 }
 
 .text-banner{
@@ -47,6 +50,15 @@ font-family: 'Ms Madi', cursive;*/
     flex-direction: column;
 }
 
+.text-banner button{
+    background: rgba(95, 4, 91, 0.164);
+    color: white;
+    font-size: 17px;
+    width: 322px;
+    height: 71px;
+    border-radius: 12px;
+}
+
 h2{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
@@ -54,12 +66,34 @@ h2{
 }
 
 .main-section{
-    border-radius: 12px;
     font-family: 'Bebas Neue', cursive;
+    margin: 37px 80px;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-.main-section img{
+.card{
+    display: flex;
+    flex-direction: column;
     border-radius: 12px;
+    overflow: hidden;
+}
+footer{
+    height: 365px;
+}
+.inicial-msg{
+    font-family: 'Bebas Neue', cursive;
+    padding: 80px;
+    background-color: #171717;
+}
+
+.final-msg{
+    font-family: 'Bebas Neue', cursive;
+    padding: 80px;
+    background-color: #171717;
+    display: flex;
+    justify-content:end;
+    flex-direction: column;
+    align-items: center;
 }
