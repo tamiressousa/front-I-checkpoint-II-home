@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
 }
 
 /*font-family: 'Bebas Neue', cursive;
@@ -10,7 +11,6 @@ font-family: 'Ms Madi', cursive;*/
 
 .main-header{
     position: fixed;
-    font-family: 'Bebas Neue', cursive;
     background-color: #50505024;
     width: 100%;
     backdrop-filter: blur(36px);
@@ -37,6 +37,17 @@ font-family: 'Ms Madi', cursive;*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botão{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner button:hover{
@@ -44,16 +55,13 @@ font-family: 'Ms Madi', cursive;*/
     cursor: pointer;
 }
 
-.text-banner{
+.text-banner p {
     font-size: 30px;
     font-family: 'Ms Madi', cursive;
-    background: rgba(0, 0, 0, 0.8);
     color: white;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 765px;
+    height: 50px;
+
 }
 
 .text-banner button{
@@ -65,14 +73,17 @@ font-family: 'Ms Madi', cursive;*/
     border-radius: 12px;
 }
 
+h1{
+    color: rgb(209, 22, 147);
+    font-size: 60px;
+}
+
 h2{
-    font-family: 'Bebas Neue', cursive;
     text-align: center;
     font-size: 50px;
 }
 
 .main-section{
-    font-family: 'Bebas Neue', cursive;
     margin: 37px 80px;
     display: grid;
     grid-template-columns: 31.7% 31.7% 31.7%;
@@ -101,7 +112,6 @@ footer{
 .inicial-msg{
     color: white;
     font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
     padding: 80px;
     background-color: #171717;
 }
@@ -115,7 +125,6 @@ footer{
 .final-msg{
     color: white;
     font-size: 17px;
-    font-family: 'Bebas Neue', cursive;
     padding: 80px;
     background-color: #171717;
     display: flex;
