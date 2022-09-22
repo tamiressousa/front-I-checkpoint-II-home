@@ -9,10 +9,12 @@ font-family: 'Work Sans', sans-serif;
 font-family: 'Ms Madi', cursive;*/
 
 .main-header{
+    position: fixed;
     font-family: 'Bebas Neue', cursive;
-    background-color: white;
-    padding: 15px 61px;
+    background-color: #50505024;
     width: 100%;
+    backdrop-filter: blur(36px);
+    padding: 15px 61px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,15 +28,20 @@ font-family: 'Ms Madi', cursive;*/
 
 .main-header ul a {
     font-size: 25px;
-    color:#260174;
+    color: white;
     text-decoration: none;
 }
 
 .banner{
-    background-image: url(../img/gif-taylor-show.gif);
+    background-image: url(../img/spectrum.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+
+.banner button:hover{
+    background-color: rgb(43, 25, 201);
+    cursor: pointer;
 }
 
 .text-banner{
@@ -67,15 +74,12 @@ h2{
 .main-section{
     font-family: 'Bebas Neue', cursive;
     margin: 37px 80px;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 31.7% 31.7% 31.7%;
     gap: 30px;
 }
 
 .card{
-    display: flex; 
-    flex-wrap: wrap;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -85,9 +89,6 @@ h2{
 }
 
 .info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background: #F4F4F4;
     border-radius: 12px;
     padding: 25px 32px;
