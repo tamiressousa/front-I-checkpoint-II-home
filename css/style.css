@@ -26,10 +26,11 @@ font-family: 'Ms Madi', cursive;*/
     list-style: none;
 }
 
-.main-header ul a {
+.main-header ul a{
     font-size: 25px;
     color: white;
     text-decoration: none;
+    width: 100%;
 }
 
 .banner{
@@ -53,6 +54,7 @@ font-family: 'Ms Madi', cursive;*/
 .banner button:hover{
     background-color: rgb(43, 25, 201);
     cursor: pointer;
+    border: 5px solid rgb(87, 19, 19);
 }
 
 .text-banner p {
@@ -93,6 +95,11 @@ h2{
 .card{
     border-radius: 12px;
     overflow: hidden;
+    transition: transform 1s;
+}
+
+.card:hover{
+    transform: scale(1.06);
 }
 
 .card img {
