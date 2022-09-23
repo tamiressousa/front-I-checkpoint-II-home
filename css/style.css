@@ -116,6 +116,20 @@ h2{
     padding: 25px 32px;
 }
 
+.info button{
+    background: rgba(95, 4, 91, 0.164);
+    color: black;
+    font-size: 17px;
+    width: 100%;
+    height: 60px;
+    border-radius: 12px;
+}
+
+.info button:hover{
+    background-color: rgba(170, 26, 151, 0.247);
+    cursor: pointer;
+}
+
 footer{
     height: 365px;
 }
@@ -132,6 +146,13 @@ footer{
     padding: 12px;
     gap: 16px;
 }
+.contato img{
+    transition:(3s);
+}
+
+.contato img:hover{
+    transform:rotate(180deg);
+}
 
 .final-msg{
     color: white;
@@ -143,3 +164,4 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
