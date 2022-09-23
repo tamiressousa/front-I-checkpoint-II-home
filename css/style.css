@@ -9,6 +9,23 @@ scroll-conatiner{
     scroll-behavior: smooth;
 }
 
+.main-header label[for="bt-menu"]{
+    padding: 5px;
+    background-color: #50505024;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+
+}
+
+#bt-menu{
+    display: none;
+}
+
 .main-header{
     position: fixed;
     background-color: #50505024;
@@ -31,6 +48,11 @@ scroll-conatiner{
     color: white;
     text-decoration: none;
     width: 100%;
+}
+
+.main-header ul a:active, a:hover{
+    background: #1d075f;
+    transition: 1s;
 }
 
 .banner{
@@ -166,3 +188,31 @@ footer{
     align-items: center;
 }
 
+@media(max-width:800px){
+
+    .main-header nav label[for="bt-menu"]{
+        display: block;
+    }
+
+    #bt_menu:checked ~ .main-header nav{
+        margin-left: 0;
+    }
+
+    .main-header nav {
+        margin-left: -100%;
+        transition: 3s;
+    }
+ 
+    .main-header nav>ul{
+        margin-left:0;
+    }
+
+    .main-header nav{
+        margin-top:5px;
+    }
+
+    .main-header nav ul li{
+        width:100%;
+        display:none;
+    }
+}
