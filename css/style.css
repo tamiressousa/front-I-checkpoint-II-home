@@ -5,9 +5,9 @@
     font-family: 'Bebas Neue', cursive;
 }
 
-/*font-family: 'Bebas Neue', cursive;
-font-family: 'Work Sans', sans-serif;
-font-family: 'Ms Madi', cursive;*/
+scroll-conatiner{
+    scroll-behavior: smooth;
+}
 
 .main-header{
     position: fixed;
@@ -97,6 +97,7 @@ h2{
 }
 
 .card{
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.4);
     border-radius: 12px;
     overflow: hidden;
     transition: 1s;
