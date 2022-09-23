@@ -51,10 +51,14 @@ font-family: 'Ms Madi', cursive;*/
     justify-content: center;
 }
 
+.banner button{
+    transition: 1s;
+}
+
 .banner button:hover{
     background-color: rgb(43, 25, 201);
     cursor: pointer;
-    border: 5px solid rgb(87, 19, 19);
+    transform: scale(1.10);
 }
 
 .text-banner p {
@@ -95,7 +99,7 @@ h2{
 .card{
     border-radius: 12px;
     overflow: hidden;
-    transition: transform 1s;
+    transition: 1s;
 }
 
 .card:hover{
