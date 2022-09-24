@@ -3,31 +3,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', cursive;
-}
-
-scroll-conatiner{
     scroll-behavior: smooth;
-}
-
-.main-header label[for="bt-menu"]{
-    padding: 5px;
-    background-color: #50505024;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    display: none;
-
-}
-
-#bt-menu{
-    display: none;
 }
 
 .main-header{
     position: fixed;
+    top: 0;
+    z-index: 99;
     background-color: #50505024;
     width: 100%;
     backdrop-filter: blur(36px);
@@ -59,6 +41,7 @@ scroll-conatiner{
     background-image: url(../img/spectrum.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -123,6 +106,9 @@ h2{
     border-radius: 12px;
     overflow: hidden;
     transition: 1s;
+    position: relative;
+    width: 407px;
+    height: 512px;
 }
 
 .card:hover{
@@ -137,6 +123,15 @@ h2{
     background: #F4F4F4;
     border-radius: 12px;
     padding: 25px 32px;
+    position: absolute;
+    width: 407px;
+    height: 272px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 .info button{
@@ -188,31 +183,18 @@ footer{
     align-items: center;
 }
 
-@media(max-width:800px){
-
-    .main-header nav label[for="bt-menu"]{
-        display: block;
+@media(max-width:1550px){
+    .banner{
+        background-image: url(../img/spectrum-2.gif);
     }
+}
 
-    #bt_menu:checked ~ .main-header nav{
-        margin-left: 0;
+@media(max-width:1200px){
+    .banner{
+        background-image: url(../img/taylor-swift-guitar.png);
     }
-
-    .main-header nav {
-        margin-left: -100%;
-        transition: 3s;
-    }
- 
-    .main-header nav>ul{
-        margin-left:0;
-    }
-
-    .main-header nav{
-        margin-top:5px;
-    }
-
-    .main-header nav ul li{
-        width:100%;
-        display:none;
+    .main-section{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
