@@ -60,11 +60,11 @@
     justify-content: center;
 }
 
-.banner button{
+.banner a{
     transition: 1s;
 }
 
-.banner button:hover{
+.banner a:hover{
     background-color: rgb(43, 25, 201);
     cursor: pointer;
     transform: scale(1.10);
@@ -79,7 +79,11 @@
 
 }
 
-.text-banner button{
+.text-banner a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: rgba(95, 4, 91, 0.164);
     color: white;
     font-size: 17px;
@@ -138,16 +142,20 @@ h2{
     
 }
 
-.info button{
+.info a{
     background: rgba(95, 4, 91, 0.164);
     color: black;
     font-size: 17px;
     width: 100%;
     height: 60px;
     border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.info button:hover{
+.info a:hover{
     background-color: rgba(170, 26, 151, 0.247);
     cursor: pointer;
 }
