@@ -37,6 +37,10 @@
     transition: 1s;
 }
 
+.main-header label{
+    display: none;
+}
+
 .banner{
     background-image: url(../img/spectrum.gif);
     background-repeat: no-repeat;
@@ -187,14 +191,61 @@ footer{
     .banner{
         background-image: url(../img/spectrum-2.gif);
     }
-}
 
-@media(max-width:1200px){
-    .banner{
-        background-image: url(../img/taylor-swift-guitar.png);
-    }
     .main-section{
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media(max-width:1200px){
+
+    .main-header{
+        padding: 15px;
+    }
+
+    .main-header ul{
+        display: none;
+    }
+
+    .main-header label{
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+
+    .banner{
+        background-image: url(../img/taylor-swift-guitar.png);
+    }
+
+    .text-banner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text-banner p {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:550px){
+    .info{
+        width: 100%;
+    }
+}
+
+@media(max-width:800px){
+    .banner{
+        background-image: url(../img/ariana-grande-vertical.jpg);
     }
 }
